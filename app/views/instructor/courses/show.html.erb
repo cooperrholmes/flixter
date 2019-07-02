@@ -10,7 +10,7 @@
 
 
   <ul>
-    <%= current_course.image.url %>
+    <%= image_tag current_course.image.url %>
     <% current_course.sections.each do |section| %>
       <li>
         <%= section.title %>
