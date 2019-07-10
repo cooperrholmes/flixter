@@ -44,7 +44,9 @@
 
     <div class="col-sm-8 col-12">
       <%= @course.description %>
-      <%= image_tag @course.image.url %>
+      <% if @course.image.present? %>
+        <%= image_tag @course.image.url%>
+      <% end %>
     </div>
   </div>
 
